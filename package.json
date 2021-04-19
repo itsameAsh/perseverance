@@ -1,0 +1,32 @@
+{
+  "name": "alfred",
+  "version": "1.2.0",
+  "description": "A general discord bot",
+  "main": "index.js",
+  "dependencies": {
+    "@discordjs/opus": "^0.4.0",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^5.0.0-beta2",
+    "discord.js": "^12.4.1",
+    "distube": "^2.8.9",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "ffmpeg-static": "^4.2.7",
+    "fs-path": "^0.0.25",
+    "fs-readdir-recursive": "^1.1.0",
+    "jquery": "^3.5.1",
+    "jsdom": "^16.4.0",
+    "mongoose": "^5.11.13",
+    "mysql": "^2.18.1",
+    "node-gyp": "^7.1.2",
+    "node-pre-gyp": "^0.17.0",
+    "node-uci": "^1.3.0",
+    "pastebin-ts": "^1.2.0",
+    "socket.io": "^3.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ashton.S",
+  "license": "ISC"
+}

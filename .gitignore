@@ -5,7 +5,7 @@
 schemas
 
 # Ignore Webinterface
-public
+#public
 
 # Ignore node_modules folder
 node_modules
@@ -18,6 +18,6 @@ node_modules
 *.list
 
 # Ignore packages
-/package.json
-/package-lock.json
+#/package.json
+#/package-lock.json
 

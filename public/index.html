@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Perserverance Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+  </head>
+  <body>
+      <section class="container">
+        <H3>Channel Logs</H3>
+        <div class="one">
+            <div id="messages"></div>
+            <form id="form" action="">
+                <input id="input" autocomplete="off" /><button>Send</button>
+            </form>
+        </div>
+        
+        
+        
+        <div class="two">
+            <div id="servers"><div>Server List</div></div>
+
+        </div>  
+      </section>
+      
+    
+    
+    <script src="/socket.io/socket.io.js"></script>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+      
+        var messages = document.getElementById('messages');
+        var form = document.getElementById('form');
+        var input = document.getElementById('input');
+      
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          if (input.value) {
+            socket.emit('chat message', input.value);
+            input.value = '';
+          }
+        });
+      
+        socket.on('chat message', function(msg) {
+          var item = document.createElement('li');
+          item.textContent = msg;
+          messages.appendChild(item);
+          window.scrollTo(0, document.body.scrollHeight);
+        });
+
+        socket.on('server', function(msg) {
+          var item = document.createElement('div');
+          item.textContent = msg;
+          servers.appendChild(item);
+          window.scrollTo(0, document.body.scrollHeight);
+        })
+      </script>
+  </body>
+</html>
