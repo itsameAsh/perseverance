@@ -1,0 +1,23 @@
+# Ignore bot config
+/botconfig.json
+
+# Ignore schemas
+schemas
+
+# Ignore Webinterface
+public
+
+# Ignore node_modules folder
+node_modules
+
+# Ignore all log files
+*.log
+
+# Ignore all data files
+*.data
+*.list
+
+# Ignore packages
+/package.json
+/package-lock.json
+
