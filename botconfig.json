@@ -1,0 +1,9 @@
+{
+    "prefix": "!",
+    "token": "BOTTOKEN",
+    "ver": "3.02.9",
+    "status": "GameStonks",
+    "invite": "https://discord.com/api/oauth2/authorize?client_id=801417597970808882&permissions=502791926&scope=bot",
+    "ownerID": "242424752730406932",
+    "mysqlP": "PASSWORD"
+}
